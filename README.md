@@ -114,65 +114,6 @@ NovaSpire AI Coder enforces **Tier 5+ Absolute Override** quality standards:
 
 ---
 
-## 📋 Roadmap
-
-### Phase 1 ✅ — Fundament og arkitektur
-- Mappe-struktur, modulgrenser, dataflyt
-- Kernel-skjelett med state machine
-- Ollama-backend setup
-- .md-konvensjoner
-
-### Phase 2 ✅ — Knowledge Pipeline (.md → RAG)
-- .md parser med heading-basert segmentering
-- Chunking (300-800 tokens) med metadata
-- Embedding-modell lokalt
-- Index + søk (SQLite + FAISS/Qdrant)
-- Context-builder
-
-### Phase 3 ✅ — LLM-lag og streng output-kontroll
-- System-prompt for coder
-- JSON-schema for actions
-- Strict validator
-- Model-routing (reasoner vs coder)
-
-### Phase 4 ✅ — Tooling-laget
-- File executor (patching, diff, atomic writes)
-- Git-integrasjon (commit per steg, revert ved feil)
-- Test runner (enhetstester etter hver iterasjon)
-- Static analysis (lint, type-check, sikkerhet)
-
-### Phase 5 ✅ — Verifier-lag
-- Critic-prompt (LLM vurderer egen kode)
-- Auto-repair loop (generer patch → test → kritikk → patch)
-- Policy-enforcer (navngiving, arkitektur, filgrenser)
-
-### Phase 6 ✅ — Full Hybrid-Loop
-- Plan → Execute → Verify → Reflect hovedsløyfe
-- State persistence (agenten husker oppgaver)
-- Multi-step tasks (store features i deloppgaver)
-- Safety gates (ingen endringer uten godkjent verifikasjon)
-
-### Phase 7 ✅ — Optimalisering
-- Caching av RAG-kontekst
-- Parallel verifikasjon
-- Model-ensembling
-- Long-context streaming
-
-### Phase 8 ✅ — Autonomi og prosjektstyring
-- Task decomposition
-- Roadmap-forståelse
-- Feature-level planning
-- Self-evaluation
-
-### Phase 9 ✅ — VSCode Extension
-- VSCode Extension skeleton
-- Chat UI
-- Code Actions
-- File Context
-- Backend integration
-
----
-
 ## 🛠️ Installation (Coming Soon)
 
 ### Prerequisites
@@ -285,8 +226,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub Issues**: [github.com/novaspire/novaspire-coder/issues](https://github.com/novaspire/novaspire-coder/issues)
-- **Discussions**: [github.com/novaspire/novaspire-coder/discussions](https://github.com/novaspire/novaspire-coder/discussions)
+www.novaspire-ai.com
+support@novaspire-ai.com
 
 ---
 
