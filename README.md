@@ -2,8 +2,7 @@
 
 
 <div align="center">
-**Comeing Soon**
-**Tier 5+ Autonomous Coding Agent with Strict Quality Standards**
+**Comeing Soon - Tier 5+ Autonomous Coding Agent with Strict Quality Standards**
 
 [![Coming Soon](https://img.shields.io/badge/status-coming%20soon-orange)](https://github.com/novaspire/novaspire-coder)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
