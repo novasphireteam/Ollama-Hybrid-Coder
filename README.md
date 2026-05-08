@@ -1,3 +1,297 @@
-Comeing Soon!
-Free Code agent, run localy. modified ollama. makes this more powerful coder then nomral comersical codeing agents. 
-This is just lightwight version of our real hybrid ai. soon will realse free API for code assist for developers for free.
+# 🟠 NovaSpire AI Coder
+
+<div align="center">
+
+**Tier 5+ Autonomous Coding Agent with Strict Quality Standards**
+
+[![Coming Soon](https://img.shields.io/badge/status-coming%20soon-orange)](https://github.com/novaspire/novaspire-coder)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Quality: Tier 5+](https://img.shields.io/badge/quality-tier%205%2B-red.svg)](https://github.com/novaspire/novaspire-coder)
+
+</div>
+
+---
+
+## 🚀 Overview
+
+**NovaSpire AI Coder** is an enterprise-grade hybrid autonomous coding agent built with military precision and aerospace-quality standards. It combines Retrieval-Augmented Generation (RAG), strict LLM output control, and deterministic verification to deliver reliable, high-quality code generation.
+
+### Key Features
+
+- 🔍 **Knowledge Pipeline** — Project-aware RAG with .md parsing and vector search
+- 🛡️ **Quality Gates** — 6 non-negotiable quality gates (TYPES, COMPLEXITY, SAFETY, STRUCTURE, DOMAIN, TESTING)
+- 🔄 **Hybrid Loop** — State machine: PLAN → RETRIEVE → GENERATE → VERIFY → APPLY
+- 🤖 **Model Routing** — Intelligent selection between reasoning and coding models
+- ✅ **Auto-Repair** — Critic + auto-correction loop for iterative improvement
+- 🔒 **Safety Gates** — No changes without verification
+- ⚡ **Optimization** — Caching, parallel verification, model ensembling
+- 🎯 **Autonomy** — Task decomposition, roadmap understanding, feature-level planning
+- 💬 **VSCode Extension** — Chat interface with code actions
+
+---
+
+## 🏗️ Architecture
+
+NovaSpire AI Coder follows a modular architecture with strict separation of concerns:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     VSCode Extension                        │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│  │  Chat UI │  │ Code Act │  │File Ctxt │  │ Backend  │  │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                        Hybrid Loop                            │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ PLAN → RETRIEVE → GENERATE → VERIFY → APPLY           │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+         │           │           │           │           │
+         ▼           ▼           ▼           ▼           ▼
+┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐
+│  RAG    │  │  LLM    │  │Verifier │  │Tooling  │  │ Autonomy │
+│ Pipeline│  │  Layer  │  │  Layer  │  │  Layer  │  │   Layer  │
+└─────────┘  └─────────┘  └─────────┘  └─────────┘  └─────────┘
+```
+
+### Components
+
+- **Kernel** — State machine, hybrid loop, safety gates, autonomy
+- **RAG** — .md parsing, chunking, embedding, vector search, context builder
+- **LLM** — Ollama integration, system prompt, schema validation, model routing
+- **Verifier** — Critic, auto-repair, policy enforcement, parallel verification
+- **Tooling** — File executor, git integration, test runner, static analysis
+
+---
+
+## 🎯 Quality Standards
+
+NovaSpire AI Coder enforces **Tier 5+ Absolute Override** quality standards:
+
+### 6 Quality Gates (NON-NEGOTIABLE)
+
+1. **TYPES** — 100% type coverage, mypy --strict, no `Any` without justification
+2. **COMPLEXITY** — O() notation documented in all docstrings
+3. **SAFETY** — No hardcoded secrets, XSS, injection vulnerabilities
+4. **STRUCTURE** — frozen=True, slots=True on all dataclasses
+5. **DOMAIN** — Domain-specific standards compliance
+6. **TESTING** — Edge cases documented and handled
+
+### Critical Violations (AUTO-REJECT)
+
+- Hardcoded credentials/secrets
+- Race conditions / memory leaks
+- XSS/SQL injection/Path traversal
+- O(n²) where O(n log n) is possible
+- Untyped functions
+- Unhandled exceptions
+- Blocking I/O in async context
+
+---
+
+## 🔧 Technology Stack
+
+### Backend
+- **Python 3.10+** — Core implementation
+- **Ollama** — Local LLM inference (CodeLlama, LLaMA2)
+- **sentence-transformers** — Embeddings
+- **FAISS/Qdrant** — Vector search
+- **httpx** — Async HTTP client
+- **GitPython** — Git integration
+- **pytest** — Testing
+- **mypy** — Type checking
+- **pylint** — Linting
+- **bandit** — Security analysis
+
+### VSCode Extension
+- **TypeScript 5.0+** — Extension implementation
+- **VSCode API** — Editor integration
+- **Webview API** — Chat interface
+
+---
+
+## 📋 Roadmap
+
+### Phase 1 ✅ — Fundament og arkitektur
+- Mappe-struktur, modulgrenser, dataflyt
+- Kernel-skjelett med state machine
+- Ollama-backend setup
+- .md-konvensjoner
+
+### Phase 2 ✅ — Knowledge Pipeline (.md → RAG)
+- .md parser med heading-basert segmentering
+- Chunking (300-800 tokens) med metadata
+- Embedding-modell lokalt
+- Index + søk (SQLite + FAISS/Qdrant)
+- Context-builder
+
+### Phase 3 ✅ — LLM-lag og streng output-kontroll
+- System-prompt for coder
+- JSON-schema for actions
+- Strict validator
+- Model-routing (reasoner vs coder)
+
+### Phase 4 ✅ — Tooling-laget
+- File executor (patching, diff, atomic writes)
+- Git-integrasjon (commit per steg, revert ved feil)
+- Test runner (enhetstester etter hver iterasjon)
+- Static analysis (lint, type-check, sikkerhet)
+
+### Phase 5 ✅ — Verifier-lag
+- Critic-prompt (LLM vurderer egen kode)
+- Auto-repair loop (generer patch → test → kritikk → patch)
+- Policy-enforcer (navngiving, arkitektur, filgrenser)
+
+### Phase 6 ✅ — Full Hybrid-Loop
+- Plan → Execute → Verify → Reflect hovedsløyfe
+- State persistence (agenten husker oppgaver)
+- Multi-step tasks (store features i deloppgaver)
+- Safety gates (ingen endringer uten godkjent verifikasjon)
+
+### Phase 7 ✅ — Optimalisering
+- Caching av RAG-kontekst
+- Parallel verifikasjon
+- Model-ensembling
+- Long-context streaming
+
+### Phase 8 ✅ — Autonomi og prosjektstyring
+- Task decomposition
+- Roadmap-forståelse
+- Feature-level planning
+- Self-evaluation
+
+### Phase 9 ✅ — VSCode Extension
+- VSCode Extension skeleton
+- Chat UI
+- Code Actions
+- File Context
+- Backend integration
+
+---
+
+## 🛠️ Installation (Coming Soon)
+
+### Prerequisites
+- Python 3.10 or higher
+- Ollama (for local LLM)
+- VSCode (for extension)
+
+### Backend Setup
+```bash
+# Clone repository
+git clone https://github.com/novaspire/novaspire-coder.git
+cd novaspire-coder
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Pull CodeLlama model
+ollama pull codellama
+
+# Start backend server
+python -m nova_backend.server
+```
+
+### VSCode Extension
+```bash
+# Navigate to extension directory
+cd src/vscode_extension
+
+# Install dependencies
+npm install
+
+# Compile TypeScript
+npm run compile
+
+# Package extension
+vsce package
+
+# Install in VSCode
+code --install-extension novaspire-coder-1.0.0.vsix
+```
+
+---
+
+## 📖 Usage (Coming Soon)
+
+### VSCode Extension
+
+1. Open NovaSpire AI Chat from the activity bar
+2. Ask questions about your code
+3. Use code actions (Explain, Generate, Refactor, Analyze)
+4. Apply suggested code directly to your files
+
+### Command Line
+
+```python
+from nova_coder import NovaSpireCoder
+
+# Initialize agent
+agent = NovaSpireCoder()
+
+# Generate code
+result = agent.generate("Create a function to sort a list")
+
+# Explain code
+explanation = agent.explain(code_string)
+
+# Refactor code
+refactored = agent.refactor(code_string)
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes with descriptive messages
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Code Standards
+
+All contributions must pass:
+- 100% type coverage (mypy --strict)
+- All 6 Quality Gates
+- No critical violations
+- Frozen dataclasses with slots=True
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Ollama for local LLM inference
+- sentence-transformers for embeddings
+- FAISS for vector search
+- VSCode for the extension platform
+
+---
+
+## 📞 Contact
+
+- **GitHub Issues**: [github.com/novaspire/novaspire-coder/issues](https://github.com/novaspire/novaspire-coder/issues)
+- **Discussions**: [github.com/novaspire/novaspire-coder/discussions](https://github.com/novaspire/novaspire-coder/discussions)
+
+---
+
+<div align="center">
+
+**Built with 🟠 NovaSpire AI — Tier 5+ Absolute Override**
+
+</div>
