@@ -1,4 +1,4 @@
-# 🟠 NovaSpire AI Coder
+# 🟠 NovaSpire AI Coder (Ollama hybrid version)
 
 
 <div align="center">
