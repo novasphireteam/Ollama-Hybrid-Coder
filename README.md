@@ -15,7 +15,7 @@
 
 ## 🚀 Overview
 
-**NovaSpire AI Coder** is an enterprise-grade hybrid autonomous coding agent built with military precision and aerospace-quality standards. It combines Retrieval-Augmented Generation (RAG), strict LLM output control, and deterministic verification to deliver reliable, high-quality code generation.
+**NovaSpire AI Coder** is an enterprise-grade hybrid autonomous coding agent built with military precision and aerospace-quality standards. It combines Retrieval-Augmented Generation (RAG), strict LLM output control, and deterministic verification to deliver reliable, high-quality code generation. and best part, its free
 
 ### Key Features
 
