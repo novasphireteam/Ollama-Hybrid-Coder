@@ -1,9 +1,8 @@
 # 🟠 NovaSpire AI Coder
 
-**Comeing Soon**
 
 <div align="center">
-
+**Comeing Soon**
 **Tier 5+ Autonomous Coding Agent with Strict Quality Standards**
 
 [![Coming Soon](https://img.shields.io/badge/status-coming%20soon-orange)](https://github.com/novaspire/novaspire-coder)
